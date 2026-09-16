@@ -2,10 +2,11 @@ import pandas as pd
 import glob
 import re
 
-# --- Filtering Parameters ---
+# python3 -m pip install --user --force-reinstall --no-cache-dir pandas
+
 # Adjust MIN_LENGTH based on your expected amplicon size (e.g., 400 drops the 185bp fragments)
-MIN_LENGTH = 400   
-MIN_PIDENT = 98.0  
+MIN_LENGTH = 185
+MIN_PIDENT = 99.0  
 # Minimum bitscore difference required between the 1st and 2nd best hit to confidently assign an allele
 TIE_MARGIN = 2.0   
 
